@@ -1,0 +1,58 @@
+@import "../../../sass/utils";
+.section {
+  padding-bottom: 0;
+}
+.content {
+  ul.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        background: url(./assets/thumb@2x.png) no-repeat center center / 100%;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.r {
+  .logo {
+    margin-bottom: 2.5rem;
+    display: block;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+  @include until($desktop) {
+    text-align: center;
+  }
+}
+.ws {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  position: relative;
+  min-height: 360px;
+  padding-top: 80px;
+  .wsColumn {
+    flex-grow: 0;
+  }
+  .adv {
+    @include from($tablet) {
+      height: 200px;
+      width: 200px;
+    }
+    background-color: rgba(#000, .2);
+    text-align: center;
+    position: relative;
+    padding: 24px;
+    .icon {
+      width: 72px;
+    }
+  }
+}

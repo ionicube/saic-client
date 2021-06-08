@@ -1,0 +1,4 @@
+export const SHOW_LOADING = 'SHOW_LOADING'
+export const HIDE_LOADING = 'HIDE_LOADING'
+export const CHANGE_NAV_STYLE = 'CHANGE_NAV_STYLE'
+export const HAS_ERROR = 'HAS_ERROR'

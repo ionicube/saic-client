@@ -1,0 +1,21 @@
+.stepCol {
+  flex-shrink: 0;
+}
+.step {
+  text-align: center;
+  img {
+    width: 72px;
+    height: 72px;
+  }
+  .content {
+    strong {
+      font-weight: 500;
+    }
+    span {
+      font-size: 14px;
+    }
+    > * {
+      display: block;
+    }
+  }
+}

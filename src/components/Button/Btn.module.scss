@@ -1,0 +1,14 @@
+.button {
+  border-radius: 0 !important;
+  &.pg {
+    &:global(.is-fullwidth) {
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    transform: skew(-30deg);
+    > * {
+      transform: skew(30deg);
+    }
+  }
+}

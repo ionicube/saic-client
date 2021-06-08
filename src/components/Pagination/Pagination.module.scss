@@ -1,0 +1,10 @@
+.nav {
+  :global(.button) {
+    padding: .25rem 1.25rem !important;
+    height: auto !important;
+  }
+  li {
+    flex-grow: 0 !important;
+    margin: .25rem;
+  }
+}

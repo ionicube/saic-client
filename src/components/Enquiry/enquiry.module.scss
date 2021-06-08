@@ -1,0 +1,33 @@
+@import "../../sass/utils";
+.box {
+  padding: 30px;
+  background: rgba(#fff, .9);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  @include from($tablet) {
+    max-width: 420px;
+  }
+}
+.f {
+  font-size: 15px;
+  .declare {
+    font-size: 14px;
+  }
+  input, select {
+    background-color: white !important;
+  }
+}
+.radio {
+  input[type=radio] {
+    margin-right: 4px;
+  }
+}
+.select {
+  display: block;
+  select {
+    width: 100%;
+  }
+  &:after {
+    border-width: 1px !important;
+    border-radius: 0 !important;
+  }
+}

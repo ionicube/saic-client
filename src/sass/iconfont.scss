@@ -1,0 +1,31 @@
+@import "mixin";
+@font-face {
+  font-family: 'iconfont';  /* project id 2052622 */
+  src: url('//at.alicdn.com/t/font_2052622_w9m8tkuxe08.eot');
+  src: url('//at.alicdn.com/t/font_2052622_w9m8tkuxe08.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2052622_w9m8tkuxe08.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2052622_w9m8tkuxe08.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2052622_w9m8tkuxe08.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2052622_w9m8tkuxe08.svg#iconfont') format('svg');
+}
+.iconfont {
+  @include iconFont;
+}
+
+.icon-wechat:before {
+  content: "\e6b4";
+}
+
+.icon-add:before {
+  content: "\e664";
+}
+.icon-arrow-left:before {
+  content: "\e6e7";
+}
+
+.icon-arrow-right:before {
+  content: "\e6e8";
+}
+.icon-play:before {
+  content: "\e716";
+}

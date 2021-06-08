@@ -1,0 +1,31 @@
+@import "../../sass/utils";
+.section {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  height: 360px;
+  @include from($tablet) {
+    height: 500px;
+  }
+  &.centered {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    .title {
+      margin-top: 0;
+    }
+  }
+  &.ah {
+    height: auto !important;
+  }
+  .title {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    @include from($desktop) {
+      font-size: 4rem;
+    }
+  }
+}

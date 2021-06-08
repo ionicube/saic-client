@@ -1,0 +1,11 @@
+@import 'ie';
+@mixin gradientText ($direction, $colorList) {
+  background: transparent;
+  background: linear-gradient($direction, $colorList);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include ie10andabovehack {
+    background: transparent;
+    color: nth($colorList, 1);
+  }
+}

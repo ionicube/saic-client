@@ -1,0 +1,22 @@
+@import "../../sass/utils";
+.section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.breadcrumb {
+  li {
+    + li {
+      &:before {
+        content: '»';
+      }
+    }
+  }
+}
+.back {
+  &::before {
+    display: none;
+  }
+  @include until($tablet) {
+    display: none;
+  }
+}

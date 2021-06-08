@@ -1,0 +1,16 @@
+@mixin inViewAnimate (
+  $animationName: "lightSpeedInLeft",
+  $animationEasing: ease-in-out,
+  $animationDuration: .45
+) {
+  opacity: .2;
+  :global(.inView) & {
+    opacity: 1;
+    animation-duration: .45s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    :global {
+      animation-name: $animationName;
+    }
+  }
+}

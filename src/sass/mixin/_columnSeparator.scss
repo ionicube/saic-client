@@ -1,0 +1,38 @@
+@mixin columnSeparator($columnSelector,
+                       $itemSelector,
+                       $gapSize,
+                       $onelineBreakpoint,
+                       $multipleSelector: ":nth-child(2n)",
+                       $borderColor: #eee
+) {
+  #{$columnSelector} {
+    #{$itemSelector} {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        left: -1 * ($gapSize / 2);
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+      }
+    }
+    #{$multipleSelector} {
+      #{$itemSelector} {
+        &:before {
+          background-color: $borderColor;
+        }
+      }
+    }
+    @include from($onelineBreakpoint) {
+      &:not(:first-child) {
+        #{$itemSelector} {
+          &:before {
+            background-color: $borderColor;
+          }
+        }
+      }
+    }
+  }
+}

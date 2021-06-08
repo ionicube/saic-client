@@ -1,0 +1,21 @@
+.item {
+  height: 100%;
+  .content {
+    margin-top: auto;
+    flex-grow: 1;
+    .info {
+      font-size: 14px;
+    }
+    .ck {
+      margin-top: auto;
+    }
+    .price {
+      height: 30px;
+      font-size: 22px;
+      img {
+        height: 100%;
+        margin-left: auto;
+      }
+    }
+  }
+}

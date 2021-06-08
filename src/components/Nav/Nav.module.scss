@@ -1,0 +1,34 @@
+@import "../../sass/utils";
+.navbar {
+  .burger {
+    width: 4rem;
+  }
+  .item {
+    @include from($desktop) {
+      font-weight: 500;
+    }
+    @include from($widescreen) {
+      padding: .5rem 1.25rem;
+    }
+  }
+  .brand {
+    img {
+      &.logo {
+        @include until($tablet) {
+          max-height: 3rem;
+        }
+      }
+      &.sublogo {
+        width: 4.5rem;
+        margin-left: 1.25rem;
+        @include from($tablet) {
+          width: auto;
+          max-height: 3rem;
+        }
+        @include from($widescreen) {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+}
